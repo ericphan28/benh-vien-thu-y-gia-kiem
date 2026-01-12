@@ -76,24 +76,6 @@ export default function Services() {
             </div>
           ))}
         </div>
-
-        {/* Promotion Banner */}
-        <div className="mt-16 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-white text-center shadow-xl">
-          <h3 className="text-3xl font-bold mb-4">🎉 Khuyến mãi đặc biệt</h3>
-          <div className="bg-yellow-400 text-red-900 font-bold text-lg py-2 px-6 rounded-full inline-block mb-6">
-            📅 Áp dụng: 15/01 - 12/02/2026
-          </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg">
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-4">
-              <p className="font-bold text-2xl">Giảm 50%</p>
-              <p className="text-sm">Tất cả dịch vụ khám & điều trị phẫu thuật</p>
-            </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-4">
-              <p className="font-bold text-2xl">Giảm 20%</p>
-              <p className="text-sm">Dịch vụ tiêm phòng vaccine & grooming</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
