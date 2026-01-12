@@ -41,7 +41,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-xl mb-2">Địa chỉ</h4>
                     <p className="text-blue-100">
-                      Ấp Vĩnh Tân, Xã Gia Kiệm, Huyện Đông Nai
+                      284, tổ 17, ấp Tân Yên, xã Gia Kiệm, tỉnh Đồng Nai
                     </p>
                   </div>
                 </div>
@@ -119,13 +119,84 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <div className="text-center mt-16 pt-8 border-t border-white/20">
-        <p className="text-blue-200 mb-2">
-          © 2026 Bệnh viện Thú Y Gia Kiệm. All rights reserved.
-        </p>
-        <p className="text-sm text-blue-300">
-          Chăm sóc tận tâm – Điều trị đúng chuẩn
-        </p>
+      <div className="mt-16 pt-8 border-t border-white/20">
+        <div className="text-center mb-8">
+          <p className="text-blue-200 mb-2">
+            © 2026 Bệnh viện Thú Y Gia Kiệm. All rights reserved.
+          </p>
+          <p className="text-sm text-blue-300">
+            Chăm sóc tận tâm – Điều trị đúng chuẩn
+          </p>
+        </div>
+
+        {/* Developer & Technology Partner */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Developer */}
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all">
+            <div className="flex items-center gap-4">
+              <img
+                src="/developer/thang-phan.jpg"
+                alt="Thắng Phan"
+                className="w-16 h-16 rounded-full object-cover border-2 border-blue-400"
+              />
+              <div className="flex-1">
+                <h4 className="font-bold text-lg text-white mb-1">Thắng Phan</h4>
+                <p className="text-sm text-blue-300 mb-2">Digital Transformation Consultant</p>
+                <div className="flex flex-wrap gap-3 text-sm">
+                  <a
+                    href="https://zalo.me/0907136029"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-200 hover:text-white transition-colors flex items-center gap-1"
+                  >
+                    <span>💬</span> 0907 136 029
+                  </a>
+                  <a
+                    href="https://www.facebook.com/thang.phan.334/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-200 hover:text-white transition-colors flex items-center gap-1"
+                  >
+                    <span>📘</span> Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technology Partner */}
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all">
+            <div className="flex items-center gap-4">
+              <img
+                src="/developer/gia-kiem-so.jpg"
+                alt="Gia Kiệm Số"
+                className="w-16 h-16 rounded-full object-cover border-2 border-green-400"
+              />
+              <div className="flex-1">
+                <h4 className="font-bold text-lg text-white mb-1">Gia Kiệm Số</h4>
+                <p className="text-sm text-green-300 mb-2">Technology Partner</p>
+                <div className="flex flex-wrap gap-3 text-sm">
+                  <a
+                    href="https://www.giakiemso.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-200 hover:text-white transition-colors flex items-center gap-1"
+                  >
+                    <span>🌐</span> Giakiemso.com
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61577066581766"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-200 hover:text-white transition-colors flex items-center gap-1"
+                  >
+                    <span>📘</span> Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
