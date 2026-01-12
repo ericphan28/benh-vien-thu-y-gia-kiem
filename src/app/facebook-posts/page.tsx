@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface Post {
   icon: string;
@@ -363,12 +364,12 @@ export default function FacebookPostsPage() {
         </div>
 
         <div className="text-center mt-8">
-          <a
+          <Link
             href="/"
             className="inline-block bg-white text-purple-900 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
           >
             ← Về trang chủ
-          </a>
+          </Link>
         </div>
       </div>
     </div>
