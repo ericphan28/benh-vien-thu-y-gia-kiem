@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Cover - Bệnh viện Thú Y Gia Kiệm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .facebook-cover {
+            width: 820px;
+            height: 312px;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Megaphone Icon */
+        .megaphone {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 80px;
+            opacity: 0.3;
+        }
+        
+        /* Main Content */
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .header-text {
+            background: #FCD34D;
+            color: #dc2626;
+            font-size: 28px;
+            font-weight: 900;
+            padding: 8px 20px;
+            display: inline-block;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        
+        .hospital-name {
+            color: #FCD34D;
+            font-size: 32px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+        
+        .promo-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+            justify-content: center;
+        }
+        
+        .promo-box {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            flex: 1;
+            max-width: 380px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+        
+        .promo-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #dc2626;
+            margin-bottom: 3px;
+        }
+        
+        .promo-desc {
+            font-size: 11px;
+            color: #dc2626;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        
+        .promo-box.blue .promo-title {
+            color: #1e40af;
+        }
+        
+        .promo-box.blue .promo-desc {
+            color: #1e40af;
+        }
+        
+        .bottom-bar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+        
+        .hotline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .hotline-label {
+            font-size: 20px;
+            font-weight: 900;
+            color: #dc2626;
+        }
+        
+        .hotline-number {
+            font-size: 28px;
+            font-weight: 900;
+            color: #dc2626;
+            background: #FCD34D;
+            padding: 5px 15px;
+            border-radius: 6px;
+        }
+        
+        .date-range {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1e40af;
+            background: #DBEAFE;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+        
+        /* Pet Images */
+        .pet-images {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        
+        .pet-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #FCD34D;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .pet-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Decorative elements */
+        .sparkle {
+            position: absolute;
+            color: #FCD34D;
+            font-size: 24px;
+            animation: sparkle 2s infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+        
+        .sparkle1 { top: 20px; left: 120px; }
+        .sparkle2 { top: 40px; right: 250px; }
+        .sparkle3 { bottom: 20px; left: 200px; animation-delay: 1s; }
+        .sparkle4 { bottom: 30px; right: 300px; animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <div class="facebook-cover">
+        <!-- Decorative Sparkles -->
+        <div class="sparkle sparkle1">✨</div>
+        <div class="sparkle sparkle2">✨</div>
+        <div class="sparkle sparkle3">⭐</div>
+        <div class="sparkle sparkle4">⭐</div>
+        
+        <!-- Megaphone -->
+        <div class="megaphone">📢</div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <div class="header">
+                <div class="header-text">NHẬN DỊP KHAI TRƯƠNG</div>
+            </div>
+            
+            <div class="hospital-name">BỆNH VIỆN THÚ Y GIA KIỆM</div>
+            
+            <div class="promo-container">
+                <div class="promo-box">
+                    <div class="promo-title">GIẢM 50%</div>
+                    <div class="promo-desc">TẤT CẢ DỊCH VỤ KHÁM VÀ ĐIỀU TRỊ PHẪU THUẬT</div>
+                </div>
+                
+                <div class="promo-box blue">
+                    <div class="promo-title">GIẢM 20%</div>
+                    <div class="promo-desc">DỊCH VỤ TIÊM PHÒNG VACCINE VÀ GROOMING</div>
+                </div>
+            </div>
+            
+            <div class="bottom-bar">
+                <div class="hotline">
+                    <span class="hotline-label">Hotline:</span>
+                    <span class="hotline-number">0965 986 798</span>
+                </div>
+                <div class="date-range">📅 Áp dụng: 15/01 - 12/02/2026</div>
+            </div>
+        </div>
+        
+        <!-- Pet Images Placeholder -->
+        <div class="pet-images">
+            <div class="pet-circle">
+                <div style="width:100%;height:100%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-size:40px;">🐕</div>
+            </div>
+            <div class="pet-circle">
+                <div style="width:100%;height:100%;background:linear-gradient(135deg,#3b82f6,#2563eb);display:flex;align-items:center;justify-content:center;font-size:40px;">🐈</div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 20px; text-align: center; color: #666; font-size: 14px;">
+        <p><strong>Kích thước:</strong> 820 x 312 pixels (Facebook Cover Photo)</p>
+        <p><strong>Hướng dẫn:</strong> Nhấn F12 → chọn phần tử .facebook-cover → Screenshot hoặc sử dụng extension "Full Page Screen Capture"</p>
+        <p><strong>Hoặc:</strong> Mở file này trong trình duyệt và chụp màn hình chính xác vùng cover</p>
+    </div>
+</body>
+</html>
