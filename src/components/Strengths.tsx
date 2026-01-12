@@ -97,7 +97,7 @@ export default function Strengths() {
               </h3>
               <div className="w-32 h-1 bg-white/50 mx-auto mb-8"></div>
               <p className="text-2xl md:text-3xl font-bold mb-6 leading-relaxed">
-                "Chăm sóc tận tâm – Điều trị đúng chuẩn"
+                &ldquo;Chăm sóc tận tâm – Điều trị đúng chuẩn&rdquo;
               </p>
               <p className="text-lg md:text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto">
                 Bệnh viện thú y Gia Kiệm cam kết mang đến dịch vụ chất lượng cao, 
